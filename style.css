@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header-page{
+    height: 75px;
+    padding: 0 65px;
+    border-bottom: 0.7px #000 solid;
+}
+
+.header-padding{  
+    height: 70px;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.logo img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.menu {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.menu > nav > ul{
+    text-align: center;
+    display: block;
+}
+
+.menu-item{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu-item a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    letter-spacing: .8px;
+    color: #555252;
+    line-height: 75px;
+}
+
+.menu-item a:hover{
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.action{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.action ul{
+    display: block;
+    text-align: center;
+}
+
+.action-item{
+    display: inline-block;
+    padding: 0 15px;
+    list-style-type: none;
+    line-height: 75px;
+}
+
+.slideshow-background{
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    text-align: center;
+}
+
+.slider-content h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}   
+
+.slider-content h3::before, h3::after{
+    position: absolute;
+    top: 16px;
+    width: 80px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+}
+
+.slider-content h3::before{
+    left: 100px;
+}
+
+.slider-content h3::after{
+    left: -100px;
+}
+
+.slider-content h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.slider-content p{
+    font-size: 1.2rem   ;
+}
+
+.register{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.register-container{
+    text-align: center;
+}
+
+.register-container h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.register-form{
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+    height: 400px;
+    border: 1px solid #555252;
+    padding: 50px 100px;
+}
+
+.register-form form input{
+    background-color: transparent;
+    border: 1px solid #ebebeb;
+    color: #333;
+    font-size: 14px;
+    height: 45px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.register-form form input[type="text"]{
+    color: deeppink;
+    letter-spacing: 1px;
+}
+
+.register-form .btn-submit{
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: 0.6px solid #ebebeb;
+    color: #000;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.register-form .btn-submit:hover{
+    transition: 0.3s;
+    background-color: aquamarine;
+    color: #fff;
+}
+
+#footer-page{
+    height: 200px;
+    background-color: #f6f6f8;
+    padding: 50px 0;
+}
+
+.footer-container{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.footer-container .col h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-container .col .link{
+    list-style-type: none;
+}
+
+.footer-container .col .link a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    letter-spacing: .8px;
+    color: #555252;
+    line-height: 30px;
+}
