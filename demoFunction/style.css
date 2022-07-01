@@ -1,0 +1,46 @@
+.p-3 {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+[data-func]::after {
+    content: attr(data-func) " ";
+}
+
+a:after {content: " (" attr(href) ")";}
+
+#calc {
+    width: calc(100% - 200px);
+    background-color: aquamarine;
+}
+
+#rgb {
+    background-color: rgb(100, 50, 125);
+}
+
+#rgba {
+    background-color: rgba(190, 92, 92, 0.5);  
+}
+/* 
+#scale {
+    transform: scale(1,0);
+} */
+
+#rotate {
+    transform : rotate(5deg);
+}
+
+#translate {
+    position: relative;
+}
+
+#translate .title {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform: translateY(50%);
+}
+
+#linear-gradient {
+    background: linear-gradient(45deg, red, blue);
+}

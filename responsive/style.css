@@ -21,6 +21,8 @@ body {
     background-color: white;
     font-weight: 400;
     color: #555252;
+    max-width: 1280px;
+    
 }
 
 .container {
@@ -92,14 +94,12 @@ menu li a:hover{
 
 /* main */
 .slideshow {
-    max-width: 1280px;
-    margin: 0 auto;
 }
 .container-slide{
     position: relative;
 }
 .container-slide img{
-    margin-left: -250px;
+    width: 100%;
 }
 .container-slide .slideshow-btn-action{
     position: absolute;
@@ -407,4 +407,192 @@ menu li a:hover{
 }
 .footer-col:nth-child(5) .btn-submit:hover{
     color: #6F42C2;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1023px) {
+    .header-top {
+        display: none;
+    }
+    .header-bottom .header-bottom__menu{
+        display: none;
+    }
+    .slideshow-content h3{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+        color: #000;
+    }
+    .slideshow-content .slideshow-title::before, .slideshow-title::after{
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        content: "";
+        background-color: #000;
+    }
+    .slideshow-content .slideshow-title::before{
+        left: 60px;
+        top: 13px;
+    }
+    .slideshow-content .slideshow-title::after{
+        left: -60px;
+        top: 13px;
+    }
+    
+    .slideshow-content h1{
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    
+    .slideshow-content p{
+        font-size: 13px;
+        color: #000;
+    }
+    .slideshow-content .btn-show-now a{
+        font-size: 13px;
+        line-height: 1;
+        display: inline-block;
+        padding: 10px 30px 15px;
+        text-transform: uppercase;
+        border: 1px solid #333;
+        margin-top: 30px;
+    }
+    .support {
+        display: flex;
+        direction: column;
+    }
+
+    /* product */
+    .product-card {
+        width: 50%;
+        padding: 0 10px 30px 10px;
+    }
+
+    /* blog*/
+    .blog-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .blog-wrap {
+        width: 50%;
+        position: relative;
+        padding: 0 10px 30px 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer .flex-wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .col-6 {
+        width: 33.3333333%;
+        margin-bottom: 10px;
+    }
+
+    .footer-col:nth-child(5) {
+        width: 66.6666667%;
+    } 
+}
+
+@media only screen and (max-width: 767px) {
+    .slideshow-content {
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        text-align: center;
+    }
+    .slideshow-content .btn-show-now a{
+        font-size: 13px;
+        line-height: 1;
+        display: inline-block;
+        padding: 10px 25px 15px;
+        text-transform: uppercase;
+        border: 1px solid #333;
+        margin-top: 20px;
+    }
+
+    .support-content {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 0 10px 30px 10px;
+    }
+  
+    .blog-wrap {
+        display: block;
+    }
+
+    .blog-wrap .blog-over {
+        position: static;
+        width: 100%;
+        border-radius: 4px;
+        padding: 5px 20px;
+        transform: translateX(0);
+    }
+
+    .blog-wrap .blog-over h5 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .footer-col ul li {
+        line-height: 20px;
+        letter-spacing: 0.4px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .container {
+        padding: 0 30px;
+    }
+    .slideshow-content {
+        position: absolute;
+        top: 8%;
+        right: 15%;
+        text-align: center;
+    }
+    .slideshow-content h1{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    
+    .slideshow-content p{
+        font-size: 10px;
+        color: #000;
+    }
+    .slideshow-content .btn-show-now a{
+        font-size: 13px;
+        line-height: 1;
+        display: inline-block;
+        padding: 5px 15px 5px;
+        text-transform: uppercase;
+        border: 1px solid #333;
+        margin-top: 10px;
+    }
+    .blog-wrap {
+        width: 100%;
+        position: relative;
+        padding: 0 10px 30px 10px;
+        margin-bottom: 10px;
+    }
+    .footer {
+        padding-top: 20px;
+        height: 700px;
+    }
+    .footer-col {
+        width: 100%;
+        margin-bottom: 10px;
+    } 
 }
